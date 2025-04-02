@@ -10,7 +10,7 @@
         <div class="col-md-4 mb-4">
             <div class="card text-white bg-danger">
                 <div class="card-body">
-                    <h5 class="card-title">Total Costumers</h5>
+                    <h5 class="card-title">Total Customers</h5>
                     <h2 class="card-text">{{ total_costumers }}</h2>
                     <a href="{% url 'costumer-list' %}" class="text-white">View Costumers →</a>
                 </div>
@@ -28,11 +28,11 @@
         </div>
         
         <div class="col-md-4 mb-4">
-            <div class="card text-white bg-warning">
+            <div class="card bg-light text-dark">
                 <div class="card-body">
                     <h5 class="card-title">Total Bills</h5>
                     <h2 class="card-text">{{ total_bills }}</h2>
-                    <a href="{% url 'bill-list' %}" class="text-white">View Bills →</a>
+                    <a href="{% url 'bill-list' %}" class="text-dark">View Bills →</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="col-md-6 mb-4">
             <div class="card">
                 <div class="card-header bg-dark text-white">
-                    <h5 class="mb-0">Recently Added Costumers</h5>
+                    <h5 class="mb-0">Recently Added Customers</h5>
                 </div>
                 <div class="card-body">
                     {% if recent_costumers %}
@@ -55,11 +55,8 @@
                             {% endfor %}
                         </ul>
                     {% else %}
-                        <p class="text-muted">No costumers added yet.</p>
+                        <p class="text-muted">No customers added yet.</p>
                     {% endif %}
-                </div>
-                <div class="card-footer">
-                    <a href="{% url 'costumer-create' %}" class="btn btn-danger btn-sm">Add New Costumer</a>
                 </div>
             </div>
         </div>
@@ -71,9 +68,6 @@
                 </div>
                 <div class="card-body">
                     <div class="d-grid gap-2">
-                        <a href="{% url 'costumer-create' %}" class="btn btn-outline-danger">Add New Costumer</a>
-                        <a href="{% url 'employee-create' %}" class="btn btn-outline-success">Add New Employee</a>
-                        <a href="{% url 'bill-create' %}" class="btn btn-outline-warning">Create New Bill</a>
                     </div>
                 </div>
             </div>

@@ -45,8 +45,7 @@ class Bill(models.Model):
 
     def __str__(self):
         return f"Bill for {self.costumer.first_name} {self.costumer.last_name} - {self.total_amount} ({self.status})"
-    
+
     class Meta:
         unique_together = ('costumer', 'bill_date')
-
-
+        

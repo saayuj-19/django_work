@@ -5,7 +5,7 @@ from .views import CostumerListView, EmployeeListView, BillListView
 urlpatterns = [
     path('', views.dashboard, name='dashboard'),
 
-    path('costumers/', CustomerListView.as_view(), name='costumer-list'),
+    path('costumers/', CostumerListView.as_view(), name='costumer-list'),
 
     path('employees/', EmployeeListView.as_view(), name='employee-list'),
 

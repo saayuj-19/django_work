@@ -48,11 +48,11 @@
 
             <div class="col-md-2 p-0 sidebar">
                 <div class="p-3">
-                    <h4>Student Info System</h4>
+                    <h4>Water Billing System</h4>
                 </div>
                 <nav>
                     <a href="{% url 'dashboard' %}" class="{% if request.path == '/' %}active{% endif %}">Dashboard</a>
-                    <a href="{% url 'costumer-list' %}" class="{% if '/costumers/' in request.path %}active{% endif %}">Costumers</a>
+                    <a href="{% url 'costumer-list' %}" class="{% if '/costumers/' in request.path %}active{% endif %}">Customers</a>
                     <a href="{% url 'employee-list' %}" class="{% if '/employees/' in request.path %}active{% endif %}">Employees</a>
                     <a href="{% url 'bill-list' %}" class="{% if '/bills/' in request.path %}active{% endif %}">Bills</a>
                 </nav>
